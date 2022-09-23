@@ -1,0 +1,88 @@
+.container {
+  background: #1c1a19;
+  width: 375px;
+  height: 662px;
+  left: 500px;
+  top: 38px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  background: #3c3a39;
+  color: #ffffff;
+  width: 375px;
+  height: 92px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+nav span {
+  position: absolute;
+  left: 24px;
+  top: 63px;
+}
+
+nav i {
+  position: absolute;
+  left: 331px;
+  top: 63px;
+}
+
+.introduction {
+  color: #ff6b00;
+  font-size: 56px;
+  font-family: "Crete Round", "Times New Roman", Times, serif;
+  position: absolute;
+  left: 24px;
+  top: 212px;
+}
+
+.job-title {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  position: absolute;
+  left: 24px;
+  top: 348px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: 24px;
+  top: 387px;
+}
+
+.contact {
+  color: #dbd8d7;
+  font-size: 24px;
+  position: absolute;
+  left: 24px;
+  top: 522px;
+}
+
+.contact a :hover {
+  color: #ff6b00;
+}
+
+.logo1 {
+  margin-left: 11px;
+}
+
+.logo2 {
+  margin-left: 15px;
+}
+
+.logo3 {
+  margin-left: 15px;
+}
