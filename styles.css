@@ -12,7 +12,7 @@
 nav {
   display: flex;
   background: #3c3a39;
-  color: #ffffff;
+  color: #fff;
   width: 375px;
   height: 92px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -56,7 +56,7 @@ nav i {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   position: absolute;
   left: 24px;
