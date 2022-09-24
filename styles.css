@@ -5,7 +5,7 @@
   left: 500px;
   top: 38px;
   position: absolute;
-  height: 660px;
+  height: 662px;
   width: 375px;
 }
 
@@ -101,4 +101,18 @@ nav i {
 
 .logo3 {
   margin-left: 15px;
+}
+
+.logo4 {
+  margin-left: 15px;
+}
+
+.logo5 {
+  margin-left: 15px;
+}
+
+figure {
+  position: absolute;
+  top: 470px;
+  right: -40px;
 }
