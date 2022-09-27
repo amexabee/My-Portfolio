@@ -221,11 +221,23 @@
           to chat please get in touch.
         </p>
       </section>
-      <form>
+      <form action="https://formspree.io/f/meqdgwge" method="POST">
         <div class="form-group">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email" />
-          <textarea cols="33" rows="3" placeholder="Enter text here"></textarea>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            maxlength="30"
+            required
+          />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea
+            cols="33"
+            rows="3"
+            name="message"
+            placeholder="Enter text here"
+            required
+          ></textarea>
         </div>
         <button type="submit">Get in touch</button>
         <nav class="contact-me">
