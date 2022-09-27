@@ -200,6 +200,35 @@ header nav i {
   left: 170px;
 }
 
+button {
+  background-color: #ff6b00;
+  color: #fff;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  border: 0;
+  padding: 0.7rem;
+  margin-left: 85px;
+  margin-top: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.contact-me a :hover {
+  color: #ff6b00;
+}
+
+.about-me button {
+  position: absolute;
+  left: -60px;
+  top: 370px;
+  margin-right: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .recent-work a button {
   position: absolute;
   left: -60px;
@@ -208,10 +237,32 @@ header nav i {
   font-weight: 700;
 }
 
+.about-me p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: 24px;
+  top: 220px;
+}
+
 #first {
   position: absolute;
   left: -16px;
   top: 850px;
+}
+
+.get-in-touch p {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
 }
 
 #first h3 {
@@ -671,28 +722,6 @@ header nav i {
   top: 120px;
 }
 
-.about-me p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 24px;
-  top: 220px;
-}
-
-.about-me button {
-  position: absolute;
-  left: -60px;
-  top: 370px;
-  margin-right: 24px;
-  color: #fff;
-  text-decoration: none;
-}
-
 .fig2 {
   position: absolute;
   top: 340px;
@@ -763,15 +792,6 @@ footer {
   text-decoration: none;
 }
 
-.get-in-touch p {
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
-}
-
 form {
   position: absolute;
   left: 24px;
@@ -810,18 +830,6 @@ input[type="email"]:focus {
   outline: 0;
 }
 
-button {
-  background-color: #ff6b00;
-  color: #fff;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 24px;
-  border: 0;
-  padding: 0.7rem;
-  margin-left: 85px;
-  margin-top: 20px;
-}
-
 .contact-me {
   color: #dbd8d7;
   font-size: 24px;
@@ -830,14 +838,6 @@ button {
   top: 420px;
 }
 
-.contact-me a :hover {
-  color: #ff6b00;
-}
-
 .contact-me a {
   color: #505f79;
-}
-
-button:hover{
-  cursor: pointer;
 }
