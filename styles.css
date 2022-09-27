@@ -837,3 +837,7 @@ button {
 .contact-me a {
   color: #505f79;
 }
+
+button:hover{
+  cursor: pointer;
+}
