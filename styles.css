@@ -83,6 +83,14 @@ header nav i {
   top: 522px;
 }
 
+button :active {
+  color: #e05304;
+}
+
+button :hover {
+  cursor: pointer;
+}
+
 .contact a :hover {
   color: #ff6b00;
 }
@@ -183,14 +191,6 @@ header nav i {
   position: absolute;
   left: 24px;
   top: 578px;
-}
-
-button :active {
-  color: #e05304;
-}
-
-button :hover {
-  cursor: pointer;
 }
 
 .recent-work span :nth-child(n) {
