@@ -128,6 +128,15 @@ header nav i {
   width: 375px;
 }
 
+.line1 {
+  position: absolute;
+  left: 20px;
+  top: 205px;
+  width: 330px;
+  height: 1px;
+  border: 0;
+}
+
 .recent-work h2 {
   color: #1c1a19;
   font-size: 40px;
@@ -212,8 +221,12 @@ button {
   margin-top: 20px;
 }
 
-button:hover {
+button :hover {
   cursor: pointer;
+}
+
+button :active {
+  color: #e05304;
 }
 
 .contact-me a :hover {
@@ -830,6 +843,13 @@ input[type="email"]:focus {
   outline: 0;
 }
 
+.line2 {
+  position: absolute;
+  left: -25px;
+  top: 380px;
+  width: 375px;
+}
+
 .contact-me {
   color: #dbd8d7;
   font-size: 24px;
@@ -840,4 +860,13 @@ input[type="email"]:focus {
 
 .contact-me a {
   color: #505f79;
+}
+
+.line3 {
+  position: absolute;
+  left: 80px;
+  top: 460px;
+  width: 134px;
+  border-width: 5px;
+  border-radius: 10px;
 }
