@@ -447,7 +447,7 @@ form {
   position: relative;
   left: 24px;
   top: 160px;
-  margin-right: 24px;
+  /* margin-right: 24px; */
 }
 
 form input {
@@ -473,6 +473,8 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   padding: 12px 20px;
+  border: none;
+  background-color: #fbf8f7;
 }
 
 .form-group input[type="text"]:focus,
