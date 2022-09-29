@@ -1,52 +1,57 @@
-.container {
-  background: #1c1a19;
-  display: flex;
-  flex-direction: column;
-  left: 500px;
-  top: 38px;
-  position: absolute;
-  height: 662px;
-  width: 375px;
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-header nav {
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+
+.headline {
+  width: 375px;
+  height: 682px;
+  background: #1c1a19;
+}
+
+.headline nav {
   display: flex;
   background: #3c3a39;
-  color: #fff;
   width: 375px;
   height: 92px;
+}
+
+.navigation {
+  align-self: flex-end;
+  padding: 15px 25px;
+  color: #fff;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
 
-header nav a {
-  position: absolute;
-  left: 24px;
-  top: 63px;
+.nav-element {
+  margin-right: 222px;
+}
+
+.headline nav a {
   color: #fff;
   text-decoration: none;
 }
 
-header nav i {
-  position: absolute;
-  left: 331px;
-  top: 63px;
-}
-
-.introduction {
+.name {
   color: #ff6b00;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
   letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
   font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
+  position: relative;
+  top: 120px;
   left: 24px;
-  top: 212px;
 }
 
 .job-title {
@@ -55,166 +60,28 @@ header nav i {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  position: absolute;
+  position: relative;
+  top: 124px;
   left: 24px;
-  top: 348px;
 }
 
 .description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin-block-start: 0;
-  margin-block-end: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  position: absolute;
+  margin-right: 45px;
+  position: relative;
+  top: 130px;
   left: 24px;
-  top: 387px;
 }
 
 .contact {
   color: #dbd8d7;
   font-size: 24px;
-  position: absolute;
+  position: relative;
+  top: 145px;
   left: 24px;
-  top: 522px;
-}
-
-button :active {
-  color: #e05304;
-}
-
-button :hover {
-  cursor: pointer;
-}
-
-.contact a :hover {
-  color: #ff6b00;
-}
-
-.contact a {
-  color: #dbd8d7;
-}
-
-.logo1 {
-  margin-left: 11px;
-}
-
-.logo2 {
-  margin-left: 15px;
-}
-
-.logo3 {
-  margin-left: 15px;
-}
-
-.logo4 {
-  margin-left: 15px;
-}
-
-.logo5 {
-  margin-left: 15px;
-}
-
-.fig1 {
-  position: absolute;
-  top: 470px;
-  right: -40px;
-}
-
-.my-recent-works {
-  background: #f5f5f5;
-  display: flex;
-  flex-direction: column;
-  left: 500px;
-  top: 700px;
-  position: absolute;
-  height: 3455px;
-  width: 375px;
-}
-
-.line1 {
-  position: absolute;
-  left: 20px;
-  top: 205px;
-  width: 330px;
-  height: 1px;
-  border: 0;
-}
-
-.recent-work h2 {
-  color: #1c1a19;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 52px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
-  left: 24px;
-  top: 120px;
-}
-
-.recent-work figure {
-  position: absolute;
-  left: -16px;
-  top: 260px;
-}
-
-.recent-work h3 {
-  color: #091e42;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
-  left: 24px;
-  top: 530px;
-}
-
-.recent-work p {
-  color: #091e42;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 24px;
-  top: 578px;
-}
-
-.recent-work span :nth-child(n) {
-  position: absolute;
-  left: -60px;
-  top: 715px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid #8993a4;
-  background: #f5f5f5;
-  color: #000;
-}
-
-.recent-work span :nth-child(2) {
-  left: -1px;
-}
-
-.recent-work span :nth-child(3) {
-  left: 65px;
-}
-
-.recent-work span :nth-child(4) {
-  left: 170px;
 }
 
 button {
@@ -229,421 +96,174 @@ button {
   margin-top: 20px;
 }
 
+button:active {
+  background-color: #e05304;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.contact a :hover {
+  color: #ff6b00;
+}
+
+.contact a {
+  color: #dbd8d7;
+}
+
+#logo {
+  margin-left: 11px;
+}
+
+.logo {
+  margin-left: 15px;
+}
+
+.fig1 {
+  float: right;
+  position: relative;
+  top: -80px;
+  left: 40px;
+}
+
+.my-recent-works {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 3455px;
+  width: 375px;
+}
+
+.recent-work h2 {
+  color: #1c1a19;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0.37px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Crete Round", "Times New Roman", Times, serif;
+  position: relative;
+  left: 24px;
+  top: 120px;
+}
+
+.line1 {
+  position: relative;
+  left: 0px;
+  top: 165px;
+  width: 330px;
+  height: 1px;
+  border: 0;
+}
+
+.recent-work figure {
+  position: relative;
+  left: -16px;
+  top: 245px;
+}
+
+.recent-work h3 {
+  color: #091e42;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.37px;
+  font-family: "Crete Round", "Times New Roman", Times, serif;
+  position: relative;
+  left: 24px;
+  top: 250px;
+}
+
+.recent-work p {
+  color: #091e42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.37px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  position: relative;
+  left: 24px;
+  top: 258px;
+  margin-right: 24px;
+}
+
+.recent-work span :nth-child(n) {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #8993a4;
+  background: #f5f5f5;
+  color: #000;
+  position: relative;
+  left: -60px;
+  top: 250px;
+}
+
+.recent-work span :nth-child(2) {
+  left: -135px;
+}
+
+.recent-work span :nth-child(3) {
+  left: 65px;
+  top: 181.5px;
+}
+
+.recent-work span :nth-child(4) {
+  left: -10px;
+  top: 181.5px;
+}
+
+.recent-work a button {
+  position: relative;
+  left: -60px;
+  top: 173px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
 .contact-me a :hover {
   color: #ff6b00;
 }
 
-.about-me button {
-  position: absolute;
-  left: -60px;
-  top: 370px;
-  margin-right: 24px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.recent-work a button {
-  position: absolute;
-  left: -60px;
-  top: 770px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-}
-
-.about-me p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 24px;
-  top: 220px;
-}
-
 #first {
-  position: absolute;
+  position: relative;
   left: -16px;
-  top: 850px;
-}
-
-.get-in-touch p {
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
-}
-
-#first h3 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
-  left: 54px;
-  top: 100px;
-}
-
-#first p {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 54px;
-  top: 185px;
-}
-
-#first span :nth-child(n) {
-  position: absolute;
-  left: 30px;
-  top: -447px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 0;
-  background: rgba(255, 255, 255, 0.24);
-  color: #fff;
-}
-
-#first span :nth-child(2) {
-  left: 96px;
-}
-
-#first span :nth-child(3) {
-  left: 200px;
-}
-
-#first a button {
-  position: absolute;
-  left: -45px;
-  top: 336px;
-  width: 327px;
-}
-
-#first span {
-  position: absolute;
-  left: -60px;
-  top: 715px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid #8993a4;
-  background: #f5f5f5;
-  color: #000;
+  top: 200px;
 }
 
 #second {
-  position: absolute;
+  position: relative;
   left: -16px;
-  top: 1260px;
-}
-
-#second h3 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
-  left: 54px;
-  top: 100px;
-}
-
-#second p {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 54px;
-  top: 185px;
-}
-
-#second span :nth-child(n) {
-  position: absolute;
-  left: 30px;
-  top: -447px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 0;
-  background: rgba(255, 255, 255, 0.24);
-  color: #fff;
-}
-
-#second span :nth-child(2) {
-  left: 96px;
-}
-
-#second span :nth-child(3) {
-  left: 200px;
-}
-
-#second a button {
-  position: absolute;
-  left: -45px;
-  top: 336px;
-  width: 327px;
-}
-
-#second span {
-  position: absolute;
-  left: -60px;
-  top: 715px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid #8993a4;
-  background: #f5f5f5;
-  color: #000;
+  top: -165px;
 }
 
 #third {
-  position: absolute;
+  position: relative;
   left: -16px;
-  top: 1670px;
-}
-
-#third h3 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
-  left: 54px;
-  top: 100px;
-}
-
-#third p {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 54px;
-  top: 185px;
-}
-
-#third span :nth-child(n) {
-  position: absolute;
-  left: 30px;
-  top: -447px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 0;
-  background: rgba(255, 255, 255, 0.24);
-  color: #fff;
-}
-
-#third span :nth-child(2) {
-  left: 96px;
-}
-
-#third span :nth-child(3) {
-  left: 200px;
-}
-
-#third a button {
-  position: absolute;
-  left: -45px;
-  top: 336px;
-  width: 327px;
-}
-
-#third span {
-  position: absolute;
-  left: -60px;
-  top: 715px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid #8993a4;
-  background: #f5f5f5;
-  color: #000;
+  top: -530px;
 }
 
 #fourth {
-  position: absolute;
+  position: relative;
   left: -16px;
-  top: 2080px;
-}
-
-#fourth h3 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
-  left: 54px;
-  top: 100px;
-}
-
-#fourth p {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 54px;
-  top: 185px;
-}
-
-#fourth span :nth-child(n) {
-  position: absolute;
-  left: 30px;
-  top: -447px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 0;
-  background: rgba(255, 255, 255, 0.24);
-  color: #fff;
-}
-
-#fourth span :nth-child(2) {
-  left: 96px;
-}
-
-#fourth span :nth-child(3) {
-  left: 200px;
-}
-
-#fourth a button {
-  position: absolute;
-  left: -45px;
-  top: 336px;
-  width: 327px;
-}
-
-#fourth span {
-  position: absolute;
-  left: -60px;
-  top: 715px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid #8993a4;
-  background: #f5f5f5;
-  color: #000;
+  top: -895px;
 }
 
 #fifth {
-  position: absolute;
+  position: relative;
   left: -16px;
-  top: 2490px;
-}
-
-#fifth h3 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 44px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
-  left: 54px;
-  top: 100px;
-}
-
-#fifth p {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 54px;
-  top: 185px;
-}
-
-#fifth span :nth-child(n) {
-  position: absolute;
-  left: 30px;
-  top: -447px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 0;
-  background: rgba(255, 255, 255, 0.24);
-  color: #fff;
-}
-
-#fifth span :nth-child(2) {
-  left: 96px;
-}
-
-#fifth span :nth-child(3) {
-  left: 200px;
-}
-
-#fifth a button {
-  position: absolute;
-  left: -45px;
-  top: 336px;
-  width: 327px;
-}
-
-#fifth span {
-  position: absolute;
-  left: -60px;
-  top: 715px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid #8993a4;
-  background: #f5f5f5;
-  color: #000;
+  top: -1260px;
 }
 
 #sixth {
-  position: absolute;
+  position: relative;
   left: -16px;
-  top: 2900px;
+  top: -1625px;
 }
 
-#sixth h3 {
+.card h3 {
   color: #fff;
   font-size: 32px;
   font-weight: 400;
@@ -652,29 +272,27 @@ button {
   margin-block-start: 0;
   margin-block-end: 0;
   font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
-  left: 54px;
-  top: 100px;
+  position: relative;
+  left: 55px;
+  top: -306px;
 }
 
-#sixth p {
+.card p {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
   font-family: Inter, Arial, Helvetica, sans-serif;
-  position: absolute;
+  position: relative;
   left: 54px;
-  top: 185px;
+  top: -302px;
 }
 
-#sixth span :nth-child(n) {
-  position: absolute;
-  left: 30px;
-  top: -447px;
+.card span :nth-child(n) {
+  position: relative;
+  left: -30px;
+  top: -320px;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -683,40 +301,26 @@ button {
   color: #fff;
 }
 
-#sixth span :nth-child(2) {
-  left: 96px;
+.card span :nth-child(2) {
+  left: -103px;
 }
 
-#sixth span :nth-child(3) {
-  left: 200px;
+.card span :nth-child(3) {
+  left: 139px;
+  top: -386.3px;
 }
 
-#sixth a button {
-  position: absolute;
+.card a button {
+  position: relative;
   left: -45px;
-  top: 336px;
+  top: -387px;
   width: 327px;
-}
-
-#sixth span {
-  position: absolute;
-  left: -60px;
-  top: 715px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid #8993a4;
-  background: #f5f5f5;
-  color: #000;
 }
 
 .about-me {
   background: #1c1a19;
   display: flex;
   flex-direction: column;
-  left: 500px;
-  top: 4155px;
-  position: absolute;
   height: 1901px;
   width: 375px;
 }
@@ -730,33 +334,57 @@ button {
   margin-block-start: 0;
   margin-block-end: 0;
   font-family: "Crete Round", "Times New Roman", Times, serif;
-  position: absolute;
+  position: relative;
   left: 24px;
   top: 120px;
 }
 
+.about-me p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  position: relative;
+  left: 24px;
+  top: 133px;
+  margin-right: 38px;
+}
+
+.about-me button {
+  position: relative;
+  left: -60px;
+  top: 140px;
+  margin-right: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .fig2 {
-  position: absolute;
-  top: 340px;
-  right: -40px;
+  position: relative;
+  top: 80px;
+  right: -175px;
 }
 
 #style1 {
-  position: absolute;
-  left: 70px;
-  top: 700px;
+  position: relative;
+  left: -20px;
+  top: 200px;
+  text-align: center;
 }
 
 #style2 {
-  position: absolute;
-  left: 70px;
-  top: 1020px;
+  position: relative;
+  left: -20px;
+  top: 250px;
+  text-align: center;
 }
 
 #style3 {
-  position: absolute;
-  left: 70px;
-  top: 1390px;
+  position: relative;
+  left: -20px;
+  top: 300px;
+  text-align: center;
 }
 
 .list-style {
@@ -786,29 +414,35 @@ button {
 }
 
 footer {
-  background: #e5e5e5;
+  background: #fff;
   display: flex;
   flex-direction: column;
-  left: 500px;
-  top: 6056px;
-  position: absolute;
   height: 930px;
   width: 375px;
 }
 
 .get-in-touch {
-  position: absolute;
+  position: relative;
   left: 24px;
   top: 120px;
-  margin-right: 24px;
+  margin-right: 50px;
   color: #fff;
   text-decoration: none;
 }
 
+.get-in-touch p {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
 form {
-  position: absolute;
+  position: relative;
   left: 24px;
-  top: 409px;
+  top: 160px;
   margin-right: 24px;
 }
 
@@ -844,18 +478,19 @@ input[type="email"]:focus {
 }
 
 .line2 {
-  position: absolute;
+  color: #dfe1e6;
+  position: relative;
   left: -25px;
-  top: 380px;
+  top: 140px;
   width: 375px;
 }
 
 .contact-me {
   color: #dbd8d7;
   font-size: 24px;
-  position: absolute;
+  position: relative;
   left: 40px;
-  top: 420px;
+  top: 160px;
 }
 
 .contact-me a {
@@ -863,9 +498,9 @@ input[type="email"]:focus {
 }
 
 .line3 {
-  position: absolute;
-  left: 80px;
-  top: 460px;
+  position: relative;
+  left: -30px;
+  top: 183px;
   width: 134px;
   border-width: 5px;
   border-radius: 10px;
