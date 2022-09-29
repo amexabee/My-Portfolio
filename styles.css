@@ -37,6 +37,14 @@ body {
   margin-right: 222px;
 }
 
+.contact a {
+  color: #dbd8d7;
+}
+
+.contact-me a {
+  color: #505f79;
+}
+
 .headline nav a {
   color: #fff;
   text-decoration: none;
@@ -106,10 +114,6 @@ button:hover {
 
 .contact a :hover {
   color: #ff6b00;
-}
-
-.contact a {
-  color: #dbd8d7;
 }
 
 #logo {
@@ -213,6 +217,15 @@ button:hover {
 .recent-work span :nth-child(4) {
   left: -10px;
   top: 181.5px;
+}
+
+.about-me button {
+  position: relative;
+  left: -60px;
+  top: 140px;
+  margin-right: 24px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .recent-work a button {
@@ -351,15 +364,6 @@ button:hover {
   margin-right: 38px;
 }
 
-.about-me button {
-  position: relative;
-  left: -60px;
-  top: 140px;
-  margin-right: 24px;
-  color: #fff;
-  text-decoration: none;
-}
-
 .fig2 {
   position: relative;
   top: 80px;
@@ -481,7 +485,7 @@ input[type="email"]:focus {
   color: #dfe1e6;
   position: relative;
   left: -25px;
-  top: 140px;
+  top: 130px;
   width: 375px;
 }
 
@@ -491,10 +495,6 @@ input[type="email"]:focus {
   position: relative;
   left: 40px;
   top: 160px;
-}
-
-.contact-me a {
-  color: #505f79;
 }
 
 .line3 {
