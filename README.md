@@ -22,7 +22,7 @@ Feel free to get a local copy up and running follow these simple steps:
 
 - GitHub: [@amexabee](https://github.com/amexabee)
 - Twitter: [@fountfillwblood](https://twitter.com/fountfillwblood)
-- LinkedIn: linkedin.com/in/amanuel-galema-56900024a
+- LinkedIn: (https://www.linkedin.com/in/amanuel-galema/)
 
 ## 🤝 Contributing
 

@@ -26,8 +26,22 @@
     <div class="headline">
       <nav>
         <article class="navigation">
-          <a class="nav-element" href="#">My logo</a>
-          <i class="fa fa-bars"></i>
+          <span>
+            <a class="nav-element" href="#">My logo</a>
+            <i id="bars" class="fa fa-bars"></i>
+            <a class="nav-desktop" class="nav-element" href="#my-recent-works"
+              >Portfolio</a
+            >
+            <a class="nav-desktop" class="nav-element" href="#about-me"
+              >About</a
+            >
+            <a class="nav-desktop" class="nav-element" href="#contact"
+              >Contact</a
+            >
+            <a class="nav-desktop" class="nav-element" href="#"
+              ><i class="fa fa-envelope"></i
+            ></a>
+          </span>
         </article>
       </nav>
       <section>
@@ -45,9 +59,7 @@
           <a class="logo" href="https://github.com/amexabee"
             ><i class="fa fa-github"></i
           ></a>
-          <a
-            class="logo"
-            href="https://www.linkedin.com/in/amanuel-galema-56900024a/"
+          <a class="logo" href="https://www.linkedin.com/in/amanuel-galema"
             ><i class="fa fa-linkedin"></i
           ></a>
           <a class="logo" href="https://angel.co/"
@@ -60,17 +72,25 @@
             ><i class="fa fa-medium"></i
           ></a>
         </article>
-        <figure class="fig1">
-          <img src="illustration-header-mobile.png" alt="" />
+        <figure class="illustration-header-mobile">
+          <img src="img-mobile/illustration-header.png" alt="" />
+        </figure>
+        <figure class="illustration-header">
+          <img src="img-desktop/illustration-header.png" alt="" />
         </figure>
       </section>
     </div>
     <main>
-      <section class="my-recent-works">
+      <section id="my-recent-works">
         <article class="recent-work">
           <h2>My Recent Works</h2>
           <hr class="line1" color="black" />
-          <figure><img src="Img Placeholder (1).png" alt="" /></figure>
+          <figure class="img-mobile">
+            <img src="img-mobile/img-placeholder.png" alt="" />
+          </figure>
+          <figure class="img-desktop">
+            <img src="img-desktop/img-placeholder.png" alt="" />
+          </figure>
           <h3>Multi-Post Stories</h3>
           <p>
             A daily selection of privately personalized reads; no accounts or
@@ -83,8 +103,8 @@
           </span>
           <a href="#"><button>See Project</button></a>
         </article>
-        <article id="first" class="card">
-          <figure><img src="Img Placeholder.png" alt="" /></figure>
+        <article id="first" class="card-mobile">
+          <figure><img src="img-mobile/img-placeholder2.png" alt="" /></figure>
           <h3>Profesional Art <br />Printing Data</h3>
           <p>
             A daily selection of privately <br />
@@ -97,8 +117,8 @@
           </span>
           <a href="#"><button>See Project</button></a>
         </article>
-        <article id="second" class="card">
-          <figure><img src="Img Placeholder.png" alt="" /></figure>
+        <article id="second" class="card-mobile">
+          <figure><img src="img-mobile/img-placeholder2.png" alt="" /></figure>
           <h3>Profesional Art <br />Printing Data</h3>
           <p>
             A daily selection of privately <br />
@@ -111,8 +131,8 @@
           </span>
           <a href="#"><button>See Project</button></a>
         </article>
-        <article id="third" class="card">
-          <figure><img src="Img Placeholder.png" alt="" /></figure>
+        <article id="third" class="card-mobile">
+          <figure><img src="img-mobile/img-placeholder2.png" alt="" /></figure>
           <h3>Profesional Art <br />Printing Data</h3>
           <p>
             A daily selection of privately <br />
@@ -125,8 +145,8 @@
           </span>
           <a href="#"><button>See Project</button></a>
         </article>
-        <article id="fourth" class="card">
-          <figure><img src="Img Placeholder.png" alt="" /></figure>
+        <article id="fourth" class="card-mobile">
+          <figure><img src="img-mobile/img-placeholder2.png" alt="" /></figure>
           <h3>Profesional Art <br />Printing Data</h3>
           <p>
             A daily selection of privately <br />
@@ -139,8 +159,8 @@
           </span>
           <a href="#"><button>See Project</button></a>
         </article>
-        <article id="fifth" class="card">
-          <figure><img src="Img Placeholder.png" alt="" /></figure>
+        <article id="fifth" class="card-mobile">
+          <figure><img src="img-mobile/img-placeholder2.png" alt="" /></figure>
           <h3>Profesional Art <br />Printing Data</h3>
           <p>
             A daily selection of privately <br />
@@ -153,8 +173,8 @@
           </span>
           <a href="#"><button>See Project</button></a>
         </article>
-        <article id="sixth" class="card">
-          <figure><img src="Img Placeholder.png" alt="" /></figure>
+        <article id="sixth" class="card-mobile">
+          <figure><img src="img-mobile/img-placeholder2.png" alt="" /></figure>
           <h3>Profesional Art <br />Printing Data</h3>
           <p>
             A daily selection of privately <br />
@@ -166,9 +186,73 @@
             <button>html</button><button>bootstrap</button><button>Ruby</button>
           </span>
           <a href="#"><button>See Project</button></a>
+        </article>
+        <article id="one" class="card-desktop">
+          <figure><img src="img-desktop/img-placeholder1.png" alt="" /></figure>
+          <a href="#"><button>See Project</button></a>
+        </article>
+        <article id="two" class="card-desktop">
+          <figure><img src="img-desktop/img-placeholder2.png" alt="" /></figure>
+          <h3>Profesional Art <br />Printing Data More</h3>
+          <p>
+            A daily selection of privately personalized <br />
+            reads; no accounts or sign-ups required. <br />
+            has been the industry's standard
+          </p>
+          <span>
+            <button>html</button><button>bootstrap</button><button>Ruby</button>
+          </span>
+        </article>
+        <article id="three" class="card-desktop">
+          <figure><img src="img-desktop/img-placeholder3.png" alt="" /></figure>
+          <h3>Data Dashboard <br />Healthcare</h3>
+          <p>
+            A daily selection of privately personalized <br />
+            reads; no accounts or sign-ups required. <br />
+            has been the industry's standard
+          </p>
+          <span>
+            <button>html</button><button>bootstrap</button><button>Ruby</button>
+          </span>
+        </article>
+        <article id="four" class="card-desktop">
+          <figure><img src="img-desktop/img-placeholder3.png" alt="" /></figure>
+          <h3>Data Dashboard <br />Healthcare</h3>
+          <p>
+            A daily selection of privately personalized <br />
+            reads; no accounts or sign-ups required. <br />
+            has been the industry's standard
+          </p>
+          <span>
+            <button>html</button><button>bootstrap</button><button>Ruby</button>
+          </span>
+        </article>
+        <article id="five" class="card-desktop">
+          <figure><img src="img-desktop/img-placeholder4.png" alt="" /></figure>
+          <h3><br />Website Portfolio</h3>
+          <p>
+            A daily selection of privately personalized <br />
+            reads; no accounts or sign-ups required. <br />
+            has been the industry's standard
+          </p>
+          <span>
+            <button>html</button><button>bootstrap</button><button>Ruby</button>
+          </span>
+        </article>
+        <article id="six" class="card-desktop">
+          <figure><img src="img-desktop/img-placeholder4.png" alt="" /></figure>
+          <h3><br />Website Portfolio</h3>
+          <p>
+            A daily selection of privately personalized <br />
+            reads; no accounts or sign-ups required. <br />
+            has been the industry's standard
+          </p>
+          <span>
+            <button>html</button><button>bootstrap</button><button>Ruby</button>
+          </span>
         </article>
       </section>
-      <section class="about-me">
+      <section id="about-me">
         <h1>About Me</h1>
         <p>
           Hello I'm a software developer! I can help you build a product ,
@@ -177,18 +261,22 @@
           contact me.
         </p>
         <a href="#"><button type="submit">Get My Resume</button></a>
-        <figure class="fig2">
-          <img src="Group.png" alt="" />
+        <figure class="group-mobile">
+          <img src="img-mobile/Group.png" alt="" />
         </figure>
+        <figure class="group-desktop">
+          <img src="img-desktop/Group.png" alt="" />
+        </figure>
+        <hr class="line4" />
         <div id="style1">
           <ul class="title-style">
             <li>Language</li>
           </ul>
           <ul class="list-style">
-            <li>JavaScript</li>
-            <li>Ruby</li>
-            <li>HTML</li>
-            <li>CSS</li>
+            <li class="list">JavaScript</li>
+            <li class="list">Ruby</li>
+            <li class="list">HTML</li>
+            <li class="list">CSS</li>
           </ul>
         </div>
         <div id="style2">
@@ -196,11 +284,11 @@
             <li>Frameworks</li>
           </ul>
           <ul class="list-style">
-            <li>Bootstrap</li>
-            <li>Ruby on Rails</li>
-            <li>RSPec</li>
-            <li>CapyBara</li>
-            <li>Selenium</li>
+            <li class="list">Bootstrap</li>
+            <li class="list">Ruby on Rails</li>
+            <li class="list">RSPec</li>
+            <li class="list">CapyBara</li>
+            <li class="list">Selenium</li>
           </ul>
         </div>
         <div id="style3">
@@ -208,32 +296,50 @@
             <li>Skills</li>
           </ul>
           <ul class="list-style">
-            <li>Codekit</li>
-            <li>Github</li>
-            <li>Codepen</li>
-            <li>Gitlab</li>
-            <li>Terminal</li>
+            <li class="list">Codekit</li>
+            <li class="list">Github</li>
+            <li class="list">Codepen</li>
+            <li class="list">Gitlab</li>
+            <li class="list">Terminal</li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
-      <section class="get-in-touch">
+    <footer id="contact">
+      <section>
         <p>
-          I'm always <br />
-          interested in hearing about new projects, so if you'd like to chat
-          please get in touch.
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
         </p>
       </section>
       <form action="https://formspree.io/f/meqdgwge" method="POST">
         <div class="form-group">
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            maxlength="30"
-            required
-          />
+          <div id="mobile-form">
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              maxlength="30"
+              required
+            />
+          </div>
+          <div id="desktop-form">
+            <input
+              type="text"
+              name="name"
+              placeholder="First Name"
+              maxlength="30"
+              required
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Last Name"
+              maxlength="30"
+              required
+            />
+          </div>
+
           <input type="email" name="email" placeholder="Email" required />
           <textarea
             cols="33"
@@ -250,9 +356,7 @@
           <a id="logo" href="https://github.com/amexabee"
             ><i class="fa fa-github"></i
           ></a>
-          <a
-            class="logo"
-            href="https://www.linkedin.com/in/amanuel-galema-56900024a/"
+          <a class="logo" href="https://www.linkedin.com/in/amanuel-galema"
             ><i class="fa fa-linkedin"></i
           ></a>
           <a class="logo" href="https://angel.co/"

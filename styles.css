@@ -21,6 +21,8 @@ body {
   background: #3c3a39;
   width: 375px;
   height: 92px;
+  position: relative;
+  z-index: 999999;
 }
 
 .navigation {
@@ -35,6 +37,10 @@ body {
 
 .nav-element {
   margin-right: 222px;
+}
+
+.nav-desktop {
+  display: none;
 }
 
 .contact a {
@@ -98,6 +104,7 @@ button {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 24px;
+  font-weight: 700;
   border: 0;
   padding: 0.7rem;
   margin-left: 85px;
@@ -124,14 +131,18 @@ button:hover {
   margin-left: 15px;
 }
 
-.fig1 {
+.illustration-header-mobile {
   float: right;
   position: relative;
   top: -80px;
   left: 40px;
 }
 
-.my-recent-works {
+.illustration-header {
+  display: none;
+}
+
+#my-recent-works {
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -145,8 +156,6 @@ button:hover {
   font-weight: 400;
   line-height: 52px;
   letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
   font-family: "Crete Round", "Times New Roman", Times, serif;
   position: relative;
   left: 24px;
@@ -162,10 +171,14 @@ button:hover {
   border: 0;
 }
 
-.recent-work figure {
+.img-mobile {
   position: relative;
   left: -16px;
   top: 245px;
+}
+
+.img-desktop {
+  display: none;
 }
 
 .recent-work h3 {
@@ -219,7 +232,7 @@ button:hover {
   top: 181.5px;
 }
 
-.about-me button {
+#about-me button {
   position: relative;
   left: -60px;
   top: 140px;
@@ -276,21 +289,19 @@ button:hover {
   top: -1625px;
 }
 
-.card h3 {
+.card-mobile h3 {
   color: #fff;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
   letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
   font-family: "Crete Round", "Times New Roman", Times, serif;
   position: relative;
   left: 55px;
   top: -306px;
 }
 
-.card p {
+.card-mobile p {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -302,7 +313,7 @@ button:hover {
   top: -302px;
 }
 
-.card span :nth-child(n) {
+.card-mobile span :nth-child(n) {
   position: relative;
   left: -30px;
   top: -320px;
@@ -314,23 +325,27 @@ button:hover {
   color: #fff;
 }
 
-.card span :nth-child(2) {
+.card-mobile span :nth-child(2) {
   left: -103px;
 }
 
-.card span :nth-child(3) {
+.card-mobile span :nth-child(3) {
   left: 139px;
   top: -386.3px;
 }
 
-.card a button {
+.card-mobile a button {
   position: relative;
   left: -45px;
-  top: -387px;
+  top: -385px;
   width: 327px;
 }
 
-.about-me {
+.card-desktop {
+  display: none;
+}
+
+#about-me {
   background: #1c1a19;
   display: flex;
   flex-direction: column;
@@ -338,25 +353,23 @@ button:hover {
   width: 375px;
 }
 
-.about-me h1 {
+#about-me h1 {
   color: #ff6b00;
   font-size: 72px;
   font-weight: 400;
   line-height: 88px;
   letter-spacing: 0.37px;
-  margin-block-start: 0;
-  margin-block-end: 0;
   font-family: "Crete Round", "Times New Roman", Times, serif;
   position: relative;
   left: 24px;
   top: 120px;
 }
 
-.about-me p {
+#about-me p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color: #f4f5f7;
   font-family: Inter, Arial, Helvetica, sans-serif;
   position: relative;
   left: 24px;
@@ -364,10 +377,18 @@ button:hover {
   margin-right: 38px;
 }
 
-.fig2 {
+.group-mobile {
   position: relative;
   top: 80px;
   right: -175px;
+}
+
+.group-desktop {
+  display: none;
+}
+
+.line4 {
+  display: none;
 }
 
 #style1 {
@@ -396,7 +417,7 @@ button:hover {
   font-size: 22px;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 43px;
   color: #fff;
 }
 
@@ -405,6 +426,7 @@ button:hover {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 32px;
+  line-height: 44px;
   color: #fff;
 }
 
@@ -425,16 +447,12 @@ footer {
   width: 375px;
 }
 
-.get-in-touch {
+#contact p {
   position: relative;
   left: 24px;
   top: 120px;
   margin-right: 50px;
-  color: #fff;
   text-decoration: none;
-}
-
-.get-in-touch p {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -464,6 +482,10 @@ input[type="email"] {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 24px;
+}
+
+#desktop-form {
+  display: none;
 }
 
 textarea {
@@ -505,4 +527,399 @@ input[type="email"]:focus {
   width: 134px;
   border-width: 5px;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    width: 1440px;
+    height: 870px;
+  }
+
+  .headline nav {
+    width: 1440px;
+    height: 72px;
+  }
+
+  .navigation {
+    align-self: center;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  #bars {
+    display: none;
+  }
+
+  .nav-element {
+    margin-right: 0;
+    margin-left: 131px;
+  }
+
+  .nav-desktop {
+    display: inline;
+    position: relative;
+    left: 725px;
+    margin-left: 32px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 72px;
+    line-height: 81.5px;
+    position: relative;
+    top: 192px;
+    left: 143px;
+  }
+
+  .job-title {
+    font-weight: 500;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    position: relative;
+    top: 200px;
+    left: 143px;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    margin-right: 920px;
+    position: relative;
+    top: 210px;
+    left: 143px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -54px;
+    left: 25px;
+  }
+
+  .logo {
+    margin-bottom: 16px;
+  }
+
+  .illustration-header-mobile,
+  .img-mobile {
+    display: none;
+  }
+
+  .illustration-header {
+    display: block;
+    position: relative;
+    left: 739px;
+    top: -640px;
+    z-index: 1;
+  }
+
+  #my-recent-works {
+    height: 1810px;
+    width: 1440px;
+  }
+
+  .recent-work h2 {
+    position: relative;
+    left: 153.5px;
+    top: 130px;
+  }
+
+  .line1 {
+    position: relative;
+    left: 180px;
+    top: 108px;
+    width: 794px;
+  }
+
+  .img-desktop {
+    display: block;
+    position: relative;
+    left: 101px;
+    top: 249px;
+  }
+
+  .recent-work h3 {
+    font-size: 40px;
+    line-height: 52px;
+    position: relative;
+    left: 849px;
+    top: -210px;
+  }
+
+  .recent-work p {
+    font-size: 20px;
+    line-height: 28px;
+    position: relative;
+    left: 849px;
+    top: -195px;
+    margin-right: 970px;
+  }
+
+  .recent-work span :nth-child(n) {
+    position: relative;
+    left: 764px;
+    top: -190px;
+  }
+
+  .recent-work span :nth-child(2) {
+    left: 692px;
+  }
+
+  .recent-work span :nth-child(3) {
+    left: 620px;
+  }
+
+  .recent-work span :nth-child(4) {
+    left: 550px;
+  }
+
+  .recent-work a button {
+    position: relative;
+    left: 160px;
+    top: -120px;
+  }
+
+  .card-mobile {
+    display: none;
+  }
+
+  .card-desktop {
+    display: block;
+  }
+
+  #one {
+    position: relative;
+    left: 101px;
+    top: 5px;
+  }
+
+  #one button {
+    width: 369px;
+    height: 58px;
+    position: relative;
+    left: -44.8px;
+    top: -82px;
+  }
+
+  #two {
+    position: relative;
+    left: 101px;
+    top: -41px;
+  }
+
+  #three {
+    position: relative;
+    left: 494px;
+    top: -1176px;
+  }
+
+  #four {
+    position: relative;
+    left: 494px;
+    top: -1369px;
+  }
+
+  #five {
+    position: relative;
+    left: 887px;
+    top: -2505px;
+  }
+
+  #six {
+    position: relative;
+    left: 887px;
+    top: -2698px;
+  }
+
+  .card-desktop h3 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.37px;
+    font-family: "Crete Round", "Times New Roman", Times, serif;
+    position: relative;
+    left: 55px;
+    top: -267px;
+  }
+
+  .card-desktop p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.37px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 54px;
+    top: -250px;
+  }
+
+  .card-desktop span :nth-child(n) {
+    position: relative;
+    left: -30px;
+    top: -250px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: 0;
+    background: rgba(255, 255, 255, 0.24);
+    color: #fff;
+  }
+
+  .card-desktop span :nth-child(2) {
+    left: -103px;
+  }
+
+  .card-desktop span :nth-child(3) {
+    left: -176px;
+  }
+
+  #about-me {
+    height: 1195px;
+    width: 1440px;
+  }
+
+  #about-me h1 {
+    position: relative;
+    left: 142px;
+    top: 122px;
+  }
+
+  #about-me p {
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+    left: 142px;
+    top: 133px;
+    margin-right: 870px;
+  }
+
+  #about-me button {
+    position: relative;
+    left: 56px;
+    top: 155px;
+  }
+
+  .group-mobile {
+    display: none;
+  }
+
+  .group-desktop {
+    display: block;
+    position: relative;
+    left: 815px;
+    top: -200px;
+  }
+
+  .line4 {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: -65px;
+    width: 1156px;
+    height: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  #style1 {
+    position: relative;
+    left: 150px;
+    top: 75px;
+    text-align: left;
+  }
+
+  #style2 {
+    position: relative;
+    left: 590px;
+    top: -205px;
+    text-align: left;
+  }
+
+  #style3 {
+    position: relative;
+    left: 1020px;
+    top: -545px;
+    text-align: left;
+  }
+
+  .list {
+    padding-top: 15px;
+  }
+
+  footer {
+    height: 686px;
+    width: 1440px;
+  }
+
+  #contact p {
+    position: relative;
+    left: 135px;
+    top: 120px;
+    margin-right: 1015px;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+  }
+
+  #mobile-form {
+    display: none;
+  }
+
+  #desktop-form {
+    display: block;
+  }
+
+  form {
+    position: relative;
+    left: 654px;
+    top: -140px;
+  }
+
+  form input {
+    margin-left: 24px;
+  }
+
+  .form-group input[type="email"] {
+    width: 684px;
+    position: relative;
+    top: -70px;
+  }
+
+  textarea {
+    position: relative;
+    left: -690px;
+    top: 75px;
+    width: 650px;
+  }
+
+  #contact button {
+    position: relative;
+    left: -62px;
+    top: 32px;
+  }
+
+  .line2 {
+    position: relative;
+    left: -653.7px;
+    top: 210px;
+    width: 1440px;
+  }
+
+  .line3 {
+    display: none;
+  }
+
+  .contact-me {
+    position: relative;
+    left: 30px;
+    top: 230px;
+  }
 }
