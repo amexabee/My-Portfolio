@@ -232,6 +232,21 @@ button:hover {
   top: 181.5px;
 }
 
+.recent-work a button {
+  position: relative;
+  left: -60px;
+  top: 173px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.card-mobile a button {
+  position: relative;
+  left: -45px;
+  top: -385px;
+  width: 327px;
+}
+
 #about-me button {
   position: relative;
   left: -60px;
@@ -239,14 +254,6 @@ button:hover {
   margin-right: 24px;
   color: #fff;
   text-decoration: none;
-}
-
-.recent-work a button {
-  position: relative;
-  left: -60px;
-  top: 173px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 700;
 }
 
 .contact-me a :hover {
@@ -332,13 +339,6 @@ button:hover {
 .card-mobile span :nth-child(3) {
   left: 139px;
   top: -386.3px;
-}
-
-.card-mobile a button {
-  position: relative;
-  left: -45px;
-  top: -385px;
-  width: 327px;
 }
 
 .card-desktop {
@@ -822,7 +822,7 @@ input[type="email"]:focus {
   .line4 {
     display: block;
     position: relative;
-    left: 0px;
+    left: 0;
     top: -65px;
     width: 1156px;
     height: 1px;
