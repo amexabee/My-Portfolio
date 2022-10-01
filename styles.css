@@ -117,7 +117,8 @@ button:active {
 button:hover {
   cursor: pointer;
   color: #ff6b00;
-  background-color: #fff;
+  background-color: #fff581;
+  border: 1px solid #f55800;
 }
 
 .contact a :hover {
