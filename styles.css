@@ -671,6 +671,10 @@ input[type="email"]:focus {
     margin-right: 970px;
   }
 
+  .img-desktop :hover {
+    transform: rotate(180deg);
+  }
+
   .recent-work span :nth-child(n) {
     position: relative;
     left: 764px;
@@ -789,10 +793,6 @@ input[type="email"]:focus {
 
   .card-desktop span :nth-child(3) {
     left: -176px;
-  }
-
-  .img-desktop :hover {
-    transform: rotate(180deg);
   }
 
   #one :hover,
