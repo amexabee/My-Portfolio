@@ -16,13 +16,13 @@ Feel free to get a local copy up and running follow these simple steps:
 - Clone the repositiory to your local directory
 - Modify anything you wish
 
-## Authors
+## 👤 Author:
 
-👤 **Author1**
+Amanuel Galema
 
 - GitHub: [@amexabee](https://github.com/amexabee)
 - Twitter: [@fountfillwblood](https://twitter.com/fountfillwblood)
-- LinkedIn: linkedin.com/in/amanuel-galema-56900024a
+- LinkedIn: (https://www.linkedin.com/in/amanuel-galema/)
 
 ## 🤝 Contributing
 
@@ -37,3 +37,9 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - I couldn't have done it without the help of my team mates and the code reviewrs.
+
+## 📝 License
+
+This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/LICENSE) licensed.
+
+NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by using [templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license if you wish](https://choosealicense.com/licenses/).
