@@ -791,8 +791,13 @@ input[type="email"]:focus {
     left: -176px;
   }
 
-  .card-desktop span :hover {
-    transform: scale(2);
+  #one :hover,
+  #two :hover,
+  #three :hover,
+  #four :hover,
+  #five :hover,
+  #six :hover {
+    transform: scale(1.01);
   }
 
   #about-me {
@@ -882,7 +887,7 @@ input[type="email"]:focus {
     text-align: left;
   }
 
-  #contact p :hover {
+  #contact section :hover {
     transform: translate(12px);
     transition: ease 2s;
   }
