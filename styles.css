@@ -118,7 +118,7 @@ button:hover {
   cursor: pointer;
   color: #ff6b00;
   background-color: #fff581;
-  border: 1px solid #f55800;
+  border: 1px solid #ff6b00;
 }
 
 .contact a :hover {
@@ -671,6 +671,10 @@ input[type="email"]:focus {
     margin-right: 970px;
   }
 
+  .img-desktop :hover {
+    transform: rotate(180deg);
+  }
+
   .recent-work span :nth-child(n) {
     position: relative;
     left: 764px;
@@ -691,7 +695,7 @@ input[type="email"]:focus {
 
   .recent-work a button {
     position: relative;
-    left: 160px;
+    left: 162px;
     top: -120px;
   }
 
@@ -713,7 +717,7 @@ input[type="email"]:focus {
     width: 369px;
     height: 58px;
     position: relative;
-    left: -44.8px;
+    left: -44px;
     top: -82px;
   }
 
@@ -726,25 +730,25 @@ input[type="email"]:focus {
   #three {
     position: relative;
     left: 494px;
-    top: -1176px;
+    top: -1178px;
   }
 
   #four {
     position: relative;
     left: 494px;
-    top: -1369px;
+    top: -1371.6px;
   }
 
   #five {
     position: relative;
     left: 887px;
-    top: -2505px;
+    top: -2509px;
   }
 
   #six {
     position: relative;
     left: 887px;
-    top: -2698px;
+    top: -2701px;
   }
 
   .card-desktop h3 {
@@ -789,6 +793,15 @@ input[type="email"]:focus {
 
   .card-desktop span :nth-child(3) {
     left: -176px;
+  }
+
+  #one :hover,
+  #two :hover,
+  #three :hover,
+  #four :hover,
+  #five :hover,
+  #six :hover {
+    transform: scale(1.01);
   }
 
   #about-me {
@@ -876,6 +889,11 @@ input[type="email"]:focus {
     font-size: 40px;
     line-height: 52px;
     text-align: left;
+  }
+
+  #contact section :hover {
+    transform: translate(12px);
+    transition: ease 2s;
   }
 
   #mobile-form {
