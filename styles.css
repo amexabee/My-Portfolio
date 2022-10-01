@@ -791,6 +791,10 @@ input[type="email"]:focus {
     left: -176px;
   }
 
+  .img-desktop :hover {
+    transform: rotate(180deg);
+  }
+
   #one :hover,
   #two :hover,
   #three :hover,
