@@ -16,10 +16,6 @@ Feel free to get a local copy up and running follow these simple steps:
 - Clone the repositiory to your local directory
 - Modify anything you wish
 
-### Link
-
-https://amexabee.github.io/
-
 ## 👤 Author:
 
 Amanuel Galema
