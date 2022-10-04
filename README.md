@@ -18,7 +18,7 @@ Feel free to get a local copy up and running follow these simple steps:
 
 ### Link
 
-[Demo Link](https://amexabee.github.io/)
+(https://amexabee.github.io/)
 
 ## 👤 Author:
 
