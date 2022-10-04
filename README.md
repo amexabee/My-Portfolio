@@ -26,7 +26,7 @@ Amanuel Galema
 
 - GitHub: [@amexabee](https://github.com/amexabee)
 - Twitter: [@fountfillwblood](https://twitter.com/fountfillwblood)
-- LinkedIn: (https://www.linkedin.com/in/amanuel-galema/)
+- LinkedIn: [amanuel-galema](https://www.linkedin.com/in/amanuel-galema/)
 
 ## 🤝 Contributing
 
