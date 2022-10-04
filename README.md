@@ -16,9 +16,9 @@ Feel free to get a local copy up and running follow these simple steps:
 - Clone the repositiory to your local directory
 - Modify anything you wish
 
-### Link
+### Live Demo
 
-(https://amexabee.github.io/)
+[amexabee.github.io](https://amexabee.github.io/)
 
 ## 👤 Author:
 
