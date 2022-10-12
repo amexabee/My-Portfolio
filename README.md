@@ -16,13 +16,17 @@ Feel free to get a local copy up and running follow these simple steps:
 - Clone the repositiory to your local directory
 - Modify anything you wish
 
+### Live Demo
+
+[amexabee.github.io](https://amexabee.github.io/)
+
 ## 👤 Author:
 
 Amanuel Galema
 
 - GitHub: [@amexabee](https://github.com/amexabee)
 - Twitter: [@fountfillwblood](https://twitter.com/fountfillwblood)
-- LinkedIn: (https://www.linkedin.com/in/amanuel-galema/)
+- LinkedIn: [amanuel-galema](https://www.linkedin.com/in/amanuel-galema/)
 
 ## 🤝 Contributing
 
