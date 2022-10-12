@@ -61,16 +61,21 @@ body {
 .nav-menu.active {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   position: absolute;
   left: 0;
-  top: 92px;
-  gap: 10px;
+  top: 75px;
   background-color: #3c3a39;
-  width: 334px;
+  width: 335px;
+  height: 610px;
   text-align: center;
   transition: 0.3s;
+}
+
+.lines {
+  width: 327px;
+  margin-left: -20px;
 }
 
 .contact a {
