@@ -78,6 +78,15 @@ body {
   margin-left: -20px;
 }
 
+.nav-item {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 50px;
+  padding-bottom: 15px;
+}
+
 .contact a {
   color: #dbd8d7;
 }
