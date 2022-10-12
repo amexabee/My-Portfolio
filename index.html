@@ -23,12 +23,27 @@
     ></script>
   </head>
   <body>
-    <div class="headline">
+    <header class="headline">
       <nav>
         <article class="navigation">
-          <span>
+          <span class="nav-bar">
             <a class="nav-element" href="#">My logo</a>
-            <i id="bars" class="fa fa-bars"></i>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#my-recent-works" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about-me" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
             <a class="nav-desktop" class="nav-element" href="#my-recent-works"
               >Portfolio</a
             >
@@ -85,7 +100,7 @@
           />
         </figure>
       </section>
-    </div>
+    </header>
     <main>
       <section id="my-recent-works">
         <article class="recent-work">
@@ -441,5 +456,6 @@
         <hr class="line3" color="#0d151e" />
       </form>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
