@@ -767,6 +767,7 @@ input[type="email"]:focus {
     position: relative;
     top: -54px;
     left: 50px;
+    width: 50px;
   }
 
   .logo {
