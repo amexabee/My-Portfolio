@@ -304,7 +304,7 @@ button:hover {
   top: 181.5px;
 }
 
-.recent-work a button {
+#see-more {
   position: relative;
   left: -60px;
   top: 173px;
@@ -312,7 +312,7 @@ button:hover {
   font-weight: 700;
 }
 
-.card-mobile a button {
+.card-mobile .see-more {
   position: relative;
   left: -45px;
   top: -385px;
@@ -600,6 +600,86 @@ input[type="email"]:focus {
   border-radius: 10px;
 }
 
+#pop-up {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 343px;
+  background-color: #fff;
+  z-index: 99999999;
+}
+
+#pop-up h3 {
+  color: #091e42;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Crete Round", "Times New Roman", Times, serif;
+}
+
+#pop-up p {
+  padding: 0 16px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+#pop-up .items button:nth-child(n) {
+  position: relative;
+  left: -68px;
+  top: 30px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #2a2a2b;
+  background: rgba(255, 255, 255, 0.24);
+  color: #3c3a39;
+}
+
+#pop-up .items button:nth-child(2) {
+  left: -147px;
+}
+
+#pop-up .items button:nth-child(3) {
+  left: 100px;
+  top: -38px;
+}
+
+.img-holder {
+  position: relative;
+  top: -20px;
+}
+
+#pop-up span a:first-child {
+  position: relative;
+  top: -20px;
+  left: -58px;
+}
+
+#pop-up span a:last-child {
+  position: relative;
+  top: -86px;
+  left: 70px;
+}
+
+.my-body img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.my-body {
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popup-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   html,
   body {
@@ -687,6 +767,7 @@ input[type="email"]:focus {
     position: relative;
     top: -54px;
     left: 50px;
+    width: 50px;
   }
 
   .logo {
@@ -770,7 +851,7 @@ input[type="email"]:focus {
     left: 550px;
   }
 
-  .recent-work a button {
+  #see-more {
     position: relative;
     left: 162px;
     top: -120px;
@@ -1025,5 +1106,95 @@ input[type="email"]:focus {
     position: relative;
     left: 30px;
     top: 230px;
+  }
+
+  #pop-up {
+    display: none;
+  }
+
+  #popup-desktop {
+    position: fixed;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1156px;
+    height: 631px;
+    background-color: #fff;
+    padding: 24px 24px;
+    z-index: 9999999;
+  }
+
+  .holder {
+    display: flex;
+    padding: 55px 0;
+  }
+
+  .text-logo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+  }
+
+  #popup-desktop .items button:nth-child(n) {
+    position: relative;
+    left: -85px;
+    top: -10px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #2a2a2b;
+    background: rgba(255, 255, 255, 0.24);
+    color: #3c3a39;
+  }
+
+  #popup-desktop .items button:nth-child(2) {
+    left: -160px;
+  }
+
+  #popup-desktop .items button:nth-child(3) {
+    left: -234px;
+    top: -10px;
+  }
+
+  #popup-desktop h3 {
+    color: #091e42;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Crete Round", "Times New Roman", Times, serif;
+  }
+
+  #popup-desktop p {
+    padding: 0 16px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -21px;
+  }
+
+  #popup-desktop span a:first-child {
+    position: relative;
+    top: 110px;
+    left: -70px;
+  }
+
+  #popup-desktop span a:last-child {
+    position: relative;
+    top: 110px;
+    left: -145px;
+  }
+
+  .my-body-desktop img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+  .my-body-desktop {
+    width: 1056px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
