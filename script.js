@@ -6,9 +6,22 @@ hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
+const first = document.querySelector('#first');
+const second = document.querySelector('#second');
+const third = document.querySelector('#third');
+const fourth = document.querySelector('#fourth');
+const fifth = document.querySelector('#fifth');
+const sixth = document.querySelector('#sixth');
+const one = document.querySelector('#one');
+const two = document.querySelector('#two');
+const three = document.querySelector('#three');
+const four = document.querySelector('#four');
+const five = document.querySelector('#five');
+const six = document.querySelector('#six');
+
 const arr = [first, second, third, fourth, fifth, sixth];
 
-for (let i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i += 1) {
   const figure = document.createElement('figure');
   const img = document.createElement('img');
   img.src = 'img-mobile/img-placeholder2.png';
@@ -30,7 +43,7 @@ for (let i = 0; i < arr.length; i++) {
 
 const arr2 = [one, two, three, four, five, six];
 
-for (let i = 0; i < arr2.length; i++) {
+for (let i = 0; i < arr2.length; i += 1) {
   const figure = document.createElement('figure');
   const img = document.createElement('img');
   img.alt = 'Image placeholder';
@@ -46,7 +59,6 @@ for (let i = 0; i < arr2.length; i++) {
     button.className = 'see-desktop';
     arr2[i].appendChild(figure);
     arr2[i].appendChild(button);
-    continue;
   } else if (i === 1) {
     img.src = 'img-desktop/img-placeholder2.png';
     div.innerHTML = ('<h3>Profesional Art <br />Printing Data More</h3> <p> A daily selection of privately personalized <br /> reads; no accounts or sign-ups required. <br /> has been the industry\'s standard </p>');
@@ -58,14 +70,17 @@ for (let i = 0; i < arr2.length; i++) {
     div.innerHTML = ('<h3><br />Website Portfolio</h3> <p> A daily selection of privately personalized <br /> reads; no accounts or sign-ups required. <br /> has been the industry\'s standard </p>');
   }
 
-  arr2[i].appendChild(figure);
-  arr2[i].appendChild(div);
-  arr2[i].appendChild(span);
+  if (i !== 0) {
+    arr2[i].appendChild(figure);
+    arr2[i].appendChild(div);
+    arr2[i].appendChild(span);
+  }
 }
 
 const body = document.querySelector('body');
 const object = document.querySelectorAll('.see-more');
-for (const open of object) {
+const arrObject = Array.from(object);
+arrObject.forEach((open) => {
   open.addEventListener('click', () => {
     const popup = document.createElement('div');
     popup.id = 'pop-up';
@@ -101,16 +116,18 @@ for (const open of object) {
 
     body.appendChild(popup);
     const object = document.querySelectorAll('.close');
-    for (const close of object) {
+    const arrObject2 = Array.from(object);
+    arrObject2.forEach((close) => {
       close.addEventListener('click', () => {
         body.removeChild(popup);
       });
-    }
+    });
   });
-}
+});
 
 const object2 = document.querySelectorAll('.see-desktop');
-for (const open of object2) {
+const arrObject3 = Array.from(object2);
+arrObject3.forEach((open) => {
   open.addEventListener('click', () => {
     const popup = document.createElement('div');
     popup.id = 'popup-desktop';
@@ -154,13 +171,14 @@ for (const open of object2) {
 
     body.appendChild(popup);
     const object = document.querySelectorAll('.close');
-    for (const close of object) {
+    const arrObject2 = Array.from(object);
+    arrObject2.forEach((close) => {
       close.addEventListener('click', () => {
         body.removeChild(popup);
       });
-    }
+    });
   });
-}
+});
 
 function showMessage(input, message, type) {
   const msg = input.parentNode.querySelector('small');
@@ -190,7 +208,7 @@ function validateEmail(input, requiredMsg, invalidMsg) {
     return false;
   }
   // validate email format
-  const emailRegex =		/^(([^A-Z<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
+  const emailRegex = /^(([^A-Z<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
 
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
