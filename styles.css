@@ -581,15 +581,15 @@ small {
   color: #ff6b00;
 }
 
-#mobile-form small {
-  position: absolute;
-  top: 50px;
-  left: 20px;
-}
-
 .email-div small {
   position: absolute;
   top: 120px;
+  left: 20px;
+}
+
+#mobile-form small {
+  position: absolute;
+  top: 50px;
   left: 20px;
 }
 
