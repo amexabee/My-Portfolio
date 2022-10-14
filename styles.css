@@ -542,7 +542,8 @@ form input {
   margin-bottom: 24px;
 }
 
-.form-group input[type="text"],
+#mobile-form input[type="text"],
+#desktop-form input[type="text"],
 input[type="email"] {
   width: 327px;
   box-sizing: border-box;
@@ -569,17 +570,34 @@ textarea {
   background-color: #fbf8f7;
 }
 
-.form-group input[type="text"]:focus,
+#mobile-form input[type="text"]:focus,
+#desktop-form input[type="text"]:focus,
 input[type="email"]:focus {
   border-color: #7db0fb;
   outline: 0;
 }
 
+small {
+  color: #ff6b00;
+}
+
+.email-div small {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+}
+
+#mobile-form small {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
 .line2 {
   color: #dfe1e6;
   position: relative;
-  left: -25px;
-  top: 130px;
+  left: 0;
+  top: 300px;
   width: 375px;
 }
 
@@ -587,14 +605,14 @@ input[type="email"]:focus {
   color: #dbd8d7;
   font-size: 24px;
   position: relative;
-  left: 40px;
-  top: 160px;
+  left: 60px;
+  top: 330px;
 }
 
 .line3 {
   position: relative;
-  left: -30px;
-  top: 183px;
+  left: -20px;
+  top: 340px;
   width: 134px;
   border-width: 5px;
   border-radius: 10px;
@@ -1080,9 +1098,27 @@ input[type="email"]:focus {
 
   textarea {
     position: relative;
-    left: -690px;
-    top: 75px;
+    left: 20px;
+    top: 25px;
     width: 650px;
+  }
+
+  .frst-nm {
+    position: absolute;
+    top: 48px;
+    left: 50px;
+  }
+
+  .lst-nm {
+    position: absolute;
+    top: 48px;
+    left: 400px;
+  }
+
+  .email-div small {
+    position: absolute;
+    top: 120px;
+    left: 50px;
   }
 
   #contact button {
@@ -1093,8 +1129,8 @@ input[type="email"]:focus {
 
   .line2 {
     position: relative;
-    left: -653.7px;
-    top: 210px;
+    left: 0;
+    top: 50px;
     width: 1440px;
   }
 
@@ -1104,8 +1140,8 @@ input[type="email"]:focus {
 
   .contact-me {
     position: relative;
-    left: 30px;
-    top: 230px;
+    left: 670px;
+    top: 70px;
   }
 
   #pop-up {
