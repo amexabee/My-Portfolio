@@ -204,68 +204,68 @@
           to chat please get in touch.
         </p>
       </section>
-      <form action="https://formspree.io/f/meqdgwge" method="POST">
-        <div class="form-group">
-          <div id="mobile-form">
-            <label for="name" hidden>Name</label>
+      <form action="https://formspree.io/f/meqdgwge" method="POST" id="signup">
+        <div id="mobile-form">
+          <label for="name" hidden>Name</label>
+          <input type="text" id="name" name="name" placeholder="Full Name" />
+          <small></small>
+        </div>
+        <div id="desktop-form">
+          <span>
+            <label for="first-name" hidden>First Name</label>
             <input
               type="text"
-              name="name"
-              placeholder="Full Name"
-              maxlength="30"
-              required
-            />
-          </div>
-          <div id="desktop-form">
-            <label for="name" hidden>First Name</label>
-            <input
-              type="text"
-              name="name"
+              id="first-name"
+              name="first-name"
               placeholder="First Name"
-              maxlength="30"
-              required
             />
-            <label for="name" hidden>Last Name</label>
+            <small class="frst-nm"></small>
+          </span>
+          <span>
+            <label for="last-name" hidden>Last Name</label>
             <input
               type="text"
-              name="name"
+              id="last-name"
+              name="last-name"
               placeholder="Last Name"
-              maxlength="30"
-              required
             />
-          </div>
+            <small class="lst-nm"></small>
+          </span>
+        </div>
+        <div class="email-div">
           <label for="email" hidden>Email</label>
-          <input type="email" name="email" placeholder="Email" required />
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <small></small>
+        </div>
+        <div class="field">
           <textarea
             cols="33"
             rows="3"
             name="message"
             placeholder="Enter text here"
-            maxlength="500"
-            required
           ></textarea>
         </div>
         <button type="submit">Get in touch</button>
-        <hr class="line2" />
-        <nav class="contact-me">
-          <a id="logo" href="https://github.com/amexabee"
-            ><i class="fa fa-github"></i
-          ></a>
-          <a class="logo" href="https://www.linkedin.com/in/amanuel-galema"
-            ><i class="fa fa-linkedin"></i
-          ></a>
-          <a class="logo" href="https://angel.co/"
-            ><i class="fa fa-angellist"></i
-          ></a>
-          <a class="logo" href="https://twitter.com/fountfillwblood"
-            ><i class="fa fa-twitter"></i
-          ></a>
-          <a class="logo" href="https://medium.com/"
-            ><i class="fa fa-medium"></i
-          ></a>
-        </nav>
-        <hr class="line3" color="#0d151e" />
       </form>
+      <hr class="line2" />
+      <nav class="contact-me">
+        <a id="logo" href="https://github.com/amexabee"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a class="logo" href="https://www.linkedin.com/in/amanuel-galema"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a class="logo" href="https://angel.co/"
+          ><i class="fa fa-angellist"></i
+        ></a>
+        <a class="logo" href="https://twitter.com/fountfillwblood"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a class="logo" href="https://medium.com/"
+          ><i class="fa fa-medium"></i
+        ></a>
+      </nav>
+      <hr class="line3" color="#0d151e" />
     </footer>
     <script src="script.js"></script>
   </body>
