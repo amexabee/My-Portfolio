@@ -8,6 +8,7 @@
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 
@@ -18,7 +19,7 @@ Feel free to get a local copy up and running follow these simple steps:
 
 ### Live Demo
 
-[amexabee.github.io](https://amexabee.github.io/)
+[amexabee.github.io](https://amexabee.github.io/My-Portfolio)
 
 ## 👤 Author:
 
