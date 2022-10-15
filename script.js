@@ -249,8 +249,8 @@ form.addEventListener('submit', (event) => {
 
   const nameValid = hasValue(fullNameInput, NAME_REQUIRED);
   const emailValid = validateEmail(emailInput, EMAIL_REQUIRED, EMAIL_INVALID);
-  const firstNameValid = hasValue(firstNameInput, NAME_REQUIRED);
-  const lastNameValid = hasValue(lastNameInput, NAME_REQUIRED);
+  const firstNameValid = hasValue(firstNameInput, FIRST_NAME_REQUIRED);
+  const lastNameValid = hasValue(lastNameInput, LAST_NAME_REQUIRED);
 
   if (((firstNameValid && lastNameValid) || (nameValid)) && emailValid) {
     form.submit();
