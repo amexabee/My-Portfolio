@@ -242,11 +242,6 @@ const LAST_NAME_REQUIRED = 'Please enter your last name';
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const fullName = fullNameInput.value.trim();
-  const email = emailInput.value.trim();
-  const firstName = firstNameInput.value.trim();
-  const lastName = lastNameInput.value.trim();
-
   const nameValid = hasValue(fullNameInput, NAME_REQUIRED);
   const emailValid = validateEmail(emailInput, EMAIL_REQUIRED, EMAIL_INVALID);
   const firstNameValid = hasValue(firstNameInput, FIRST_NAME_REQUIRED);
@@ -256,6 +251,17 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 
+  
+});
+
+form.addEventListener('input', (event) => {
+  event.preventDefault();
+
+  const fullName = fullNameInput.value.trim();
+  const email = emailInput.value.trim();
+  const firstName = firstNameInput.value.trim();
+  const lastName = lastNameInput.value.trim();
+
   const formInfo = {
     fullName,
     email,
@@ -264,4 +270,5 @@ form.addEventListener('submit', (event) => {
   };
 
   localStorage.setItem('formInfo', JSON.stringify(formInfo));
+
 });
