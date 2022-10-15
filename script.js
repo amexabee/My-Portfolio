@@ -250,8 +250,6 @@ form.addEventListener('submit', (event) => {
   if (((firstNameValid && lastNameValid) || (nameValid)) && emailValid) {
     form.submit();
   }
-
-  
 });
 
 form.addEventListener('input', (event) => {
@@ -270,5 +268,4 @@ form.addEventListener('input', (event) => {
   };
 
   localStorage.setItem('formInfo', JSON.stringify(formInfo));
-
 });
