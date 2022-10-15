@@ -180,6 +180,20 @@ arrObject3.forEach((open) => {
   });
 });
 
+const fullNameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const firstNameInput = document.getElementById('first-name');
+const lastNameInput = document.getElementById('last-name');
+
+const formInfo = JSON.parse(localStorage.getItem('formInfo'));
+
+if (formInfo) {
+  fullNameInput.value = formInfo.fullName;
+  emailInput.value = formInfo.email;
+  firstNameInput.value = formInfo.firstName;
+  lastNameInput.value = formInfo.lastName;
+}
+
 function showMessage(input, message, type) {
   const msg = input.parentNode.querySelector('small');
   msg.innerText = message;
@@ -226,12 +240,26 @@ const EMAIL_INVALID = 'Please enter a correct email address format';
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const nameValid = hasValue(form.elements.name, NAME_REQUIRED);
-  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
-  const firstNameValid = hasValue(form.elements['first-name'], NAME_REQUIRED);
-  const lastNameValid = hasValue(form.elements['last-name'], NAME_REQUIRED);
+  const fullName = fullNameInput.value.trim();
+  const email = emailInput.value.trim();
+  const firstName = firstNameInput.value.trim();
+  const lastName = lastNameInput.value.trim();
+
+  const nameValid = hasValue(fullNameInput, NAME_REQUIRED);
+  const emailValid = validateEmail(emailInput, EMAIL_REQUIRED, EMAIL_INVALID);
+  const firstNameValid = hasValue(firstNameInput, NAME_REQUIRED);
+  const lastNameValid = hasValue(lastNameInput, NAME_REQUIRED);
 
   if (((firstNameValid && lastNameValid) || (nameValid)) && emailValid) {
     form.submit();
   }
+
+  const formInfo = {
+    fullName,
+    email,
+    firstName,
+    lastName,
+  };
+
+  localStorage.setItem('formInfo', JSON.stringify(formInfo));
 });
