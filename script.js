@@ -180,6 +180,20 @@ arrObject3.forEach((open) => {
   });
 });
 
+const fullNameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const firstNameInput = document.getElementById('first-name');
+const lastNameInput = document.getElementById('last-name');
+
+const formInfo = JSON.parse(localStorage.getItem('formInfo'));
+
+if (formInfo) {
+  fullNameInput.value = formInfo.fullName;
+  emailInput.value = formInfo.email;
+  firstNameInput.value = formInfo.firstName;
+  lastNameInput.value = formInfo.lastName;
+}
+
 function showMessage(input, message, type) {
   const msg = input.parentNode.querySelector('small');
   msg.innerText = message;
@@ -219,19 +233,39 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 
 const form = document.querySelector('#signup');
 
-const NAME_REQUIRED = 'Please enter your name';
+const NAME_REQUIRED = 'Please enter your full name';
 const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format';
+const FIRST_NAME_REQUIRED = 'Please enter your first name';
+const LAST_NAME_REQUIRED = 'Please enter your last name';
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const nameValid = hasValue(form.elements.name, NAME_REQUIRED);
-  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
-  const firstNameValid = hasValue(form.elements['first-name'], NAME_REQUIRED);
-  const lastNameValid = hasValue(form.elements['last-name'], NAME_REQUIRED);
+  const nameValid = hasValue(fullNameInput, NAME_REQUIRED);
+  const emailValid = validateEmail(emailInput, EMAIL_REQUIRED, EMAIL_INVALID);
+  const firstNameValid = hasValue(firstNameInput, FIRST_NAME_REQUIRED);
+  const lastNameValid = hasValue(lastNameInput, LAST_NAME_REQUIRED);
 
   if (((firstNameValid && lastNameValid) || (nameValid)) && emailValid) {
     form.submit();
   }
+});
+
+form.addEventListener('input', (event) => {
+  event.preventDefault();
+
+  const fullName = fullNameInput.value.trim();
+  const email = emailInput.value.trim();
+  const firstName = firstNameInput.value.trim();
+  const lastName = lastNameInput.value.trim();
+
+  const formInfo = {
+    fullName,
+    email,
+    firstName,
+    lastName,
+  };
+
+  localStorage.setItem('formInfo', JSON.stringify(formInfo));
 });
